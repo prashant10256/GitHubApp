@@ -5,10 +5,11 @@ import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
 import ExplorePage from "./pages/ExplorePage";
-import Likespage from "./pages/Likespage";
+import Likespage from "./pages/LikesPage";
 
 import Sidebar from "./components/Sidebar";
 import { useAuthContext } from "./context/authContext";
+import LikesPage from "./pages/LikesPage";
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
           <Route path="/login" element={!authUser ? <LoginPage /> : <Navigate to={"/"} />} />
           <Route path="/signup" element={!authUser ? <SignUpPage /> : <Navigate to={"/"} />} />
           <Route path="/explore" element={authUser ? <ExplorePage /> : <Navigate to={"/login"}/>} />
-          <Route path="/likes" element={authUser ? <Likespage /> : <Navigate to={"/login"}/> } />
+          <Route path="/likes" element={authUser ? <LikesPage /> : <Navigate to={"/login"}/> } />
         </Routes>
         <Toaster />
       </div>
