@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from "dotenv";
-import cors from "cors";
+// import cors from "cors";
 import passport from 'passport';
 import session from 'express-session';
 import path from 'path';
@@ -27,7 +27,7 @@ app.use(session({ secret: 'keyboard cat', resave: false, saveUninitialized: fals
 // persistent login sessions (recommended).
 app.use(passport.initialize());
 app.use(passport.session());
-app.use(cors())
+// app.use(cors())
 
 app.get("/", (req,res) => {
     res.send("Server is ready")
