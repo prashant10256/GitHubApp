@@ -3,7 +3,7 @@ import React, { useCallback, useEffect, useState } from 'react'
 
 import Search from '../components/Search'
 import SortRepos from '../components/SortRepos'
-import ProfileInfo from '../components/ProfileInfo.Jsx'
+import ProfileInfo from '../components/ProfileInfo'
 import Repos from '../components/Repos'
 import Spinner from "../components/Spinner"
 
