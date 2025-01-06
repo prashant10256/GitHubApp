@@ -29,9 +29,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 // app.use(cors())
 
-app.get("/", (req,res) => {
-    res.send("Server is ready")
-});
+// app.get("/", (req,res) => {
+//     res.send("Server is ready")
+// });
 
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
