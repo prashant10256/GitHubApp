@@ -6,7 +6,7 @@ import { PiSignInBold } from "react-icons/pi";
 import { MdEditDocument } from "react-icons/md";
 import { Link } from 'react-router-dom'
 import Logout from './Logout';
-import { useAuthContext } from '../context/authContext';
+import { useAuthContext } from '../context/AuthContext';
 
 function Sidebar() {
 	const {authUser} = useAuthContext();
@@ -73,4 +73,3 @@ function Sidebar() {
 }
 
 export default Sidebar
-Sidebar
