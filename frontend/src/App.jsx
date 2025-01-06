@@ -8,7 +8,7 @@ import ExplorePage from "./pages/ExplorePage";
 import Likespage from "./pages/LikesPage";
 
 import Sidebar from "./components/Sidebar";
-import { useAuthContext } from "./context/authContext";
+import { useAuthContext } from "./context/AuthContext";
 import LikesPage from "./pages/LikesPage";
 
 
